@@ -1,4 +1,4 @@
-import React from "react";
+import "../Global.css";
 
 type projectsProps = {
   name: string;

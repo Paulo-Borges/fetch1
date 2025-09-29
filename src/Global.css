@@ -1,8 +1,43 @@
 @import "tailwindcss";
+@import url("./assets/fylo.jpeg");
+@import url("./assets/extension.jpeg");
+@import url("./assets/inwood.jpeg");
 
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.bg-custom-image {
+  background-image: url("./assets/fylo.jpeg");
+  background-size: cover;
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+  transition: 6s;
+  height: 200px; /* Defina uma altura para a div */
+  width: 100%;
+}
+.bg-custom-image1 {
+  background-image: url("./assets/extension.jpeg");
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 6s;
+  height: 200px;
+  width: 100%;
+}
+
+.bg-custom-image2 {
+  background-image: url("./assets/inwood.jpeg");
+  background-size: cover;
+  background-position: 100% 0%;
+  transition: 6s;
+  height: 200px;
+  width: 100%;
+}
+.bg-custom-image:hover,
+.bg-custom-image1:hover,
+.bg-custom-image2:hover {
+  background-position: 0% 100%;
 }
