@@ -7,7 +7,6 @@ function App() {
   return (
     <>
       <Navbar />
-      <h1>Ola mundo!</h1>
       <Outlet />
       <Footer />
     </>

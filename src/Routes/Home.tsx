@@ -28,18 +28,20 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Meus Projetos</h1>
-      {/* Usa o .map() para iterar e renderizar cada projeto */}
-      {projects.map((project, index) => (
-        // É importante ter uma `key` única para cada item em listas
-        <div key={index}>
-          <h2>{project.name}</h2>
-          <div className={project.imageClass}></div>
-          <a href={project.link} target="_blank" rel="noopener noreferrer">
-            Ver Projeto
-          </a>
-        </div>
-      ))}
+      <h1 className="flex justify-center">Meus Projetos</h1>
+      <div className="flex gap-4">
+        {/* Usa o .map() para iterar e renderizar cada projeto */}
+        {projects.map((project, index) => (
+          // É importante ter uma `key` única para cada item em listas
+          <div key={index}>
+            <h2>{project.name}</h2>
+            <div className={project.imageClass}></div>
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              Ver Projeto
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
